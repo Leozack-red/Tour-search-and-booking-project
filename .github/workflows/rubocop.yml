@@ -1,4 +1,4 @@
-name: Linting
+name: Rubocop
 
 on:
   push:
