@@ -21,14 +21,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
 # Run against this stable release
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.2'
   # Code quality
-end
-
-# Run against this stable release
-group :development, :test do
   gem 'rubocop', require: false
   # Rubocop Rails extension
   gem 'rubocop-rails', require: false
@@ -66,8 +63,13 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
+  gem 'vcr'
   gem 'webdrivers'
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+# For client
+gem 'rest-client'

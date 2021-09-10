@@ -21,4 +21,6 @@ jobs:
       - name: Install Webpacker
         run: bin/rails webpacker:install
       - name: Run tests
+        env:
+            RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}  
         run: bundle exec rake

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sputnik8.com/v1/cities/1?api_key=secret_api_key&username=secret_username
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.7.2p137
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.sputnik8.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Sep 2021 12:31:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Etag:
+      - W/"ae5d6622e1b42c66ac431d9710c2c17c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _sptnik_server_session=ZWdMWDRqbXlCS0tFZ0FqRXN1bzZjSFl6RWRrZHErT1U0SVcyQlRHNlBZamR1RGF2K2xKaEU4S0w0YlFiQ2J5Y1FBSzBDMkxFRytmMGpLT2xBQVh1L1JwdXByQUYrRlNFenBjTnF0Y2JSZE1CMG1lWm9XeGhDcSthbXNMbDRCdmZYbytGTDB5NHdxeE9wM3JpYTFWaklnPT0tLXN6TUZKMlYvcXVFQllUa2liUTE2UEE9PQ%3D%3D--3fc8ff99019ba9f694853961228cc598d72c12dc;
+        path=/; HttpOnly
+      - ahoy_visit=88a98b51-b214-4c64-90c5-0e211e7c020a; domain=.sputnik8.com; path=/;
+        expires=Fri, 10 Sep 2021 16:31:55 GMT
+      - ahoy_visitor=c8c1d3df-908f-4521-acee-0da1946bf960; domain=.sputnik8.com; path=/;
+        expires=Sun, 10 Sep 2023 12:31:55 GMT
+      X-Request-Id:
+      - 632344a2-726e-4fd0-9616-6c9cad945e93
+      X-Runtime:
+      - '0.051075'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MSwidXJsIjoiaHR0cHM6Ly93d3cuc3B1dG5pazguY29tL3J1L3N0LXBldGVyc2J1cmc/cmVmPTQyNDIiLCJzbHVnIjoic3QtcGV0ZXJzYnVyZyIsIm5hbWUiOiLQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIsIm5hbWVfaW5fY2FzZSI6ItCyINCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCz0LUiLCJwcm9kdWN0cyI6MjMyNCwicHJvdmlkZXJzIjoxMjkzLCJjb29yZGluYXRlcyI6eyJsYXQiOm51bGwsImxuZyI6bnVsbH0sImdlbyI6eyJjb3VudHJ5Ijp7ImlkIjoxLCJuYW1lIjoi0KDQvtGB0YHQuNGPIn0sInJlZ2lvbiI6eyJpZCI6MSwibmFtZSI6ItCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCzIn0sImRlc2NyaXB0aW9uIjp7ImltYWdlIjoiaHR0cHM6Ly83ZDllODhhOC1mMTc4LTQwOTgtYmVhNS00OGQ5NjA5MjA2MDUuc2VsY2RuLm5ldC9kNzhmNTI4Ni1lNzYzLTRhOTUtOWNlZS1iN2M0M2MzNmJlZGMvIiwibm90ZSI6bnVsbCwidGV4dCI6IuKtkCAle2NpdHlfYWN0aXZpdGllc19jb3VudF90ZXh0fSDQv9C+INCf0LXRgtC10YDQsdGD0YDQs9GDINC+0YIg0YfQsNGB0YLQvdGL0YUg0LPQuNC00L7QsiDQuCDQvtGE0LjRhtC40LDQu9GM0L3Ri9GFINGC0YPRgNC+0L/QtdGA0LDRgtC+0YDQvtCyOiDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3Ri9C1INC4INCz0YDRg9C/0L/QvtCy0YvQtSwg0LDQstGC0L7QsdGD0YHQvdGL0LUg0YLRg9GA0Ysg0Lgg0L/QtdGI0LXRhdC+0LTQvdGL0LUg0L/RgNC+0LPRg9C70LrQuC4g0KbQtdC90Ysg0L3QsCDRjdC60YHQutGD0YDRgdC40Lgg0LIg0KHQn9CxINC+0YIgJXtjaXR5X21pbl9jb3N0fSFcclxuIn19fQ==
+  recorded_at: Fri, 10 Sep 2021 12:31:55 GMT
+recorded_with: VCR 6.0.0
