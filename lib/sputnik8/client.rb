@@ -12,35 +12,34 @@ module Sputnik8
       @username = username
     end
 
-    def activities
-      response_activities = RestClient::Request.execute(method: :get,
-                                                        url: "#{URL}/products",
-                                                        headers: {
-                                                          params: { api_key: @api_key.to_s, username: @username.to_s },
-                                                          content_type: :json, accept: :json
-                                                        })
-
-      verify_and_parse(response_activities)
+    def activities(city_id)
+      query('products', city_id)
     end
 
     def tags(id)
-      response_tags = RestClient::Request.execute(method: :get,
-                                                  url: "#{URL}/cities/#{id}/categories",
-                                                  headers: {
-                                                    params: { api_key: @api_key.to_s, username: @username.to_s },
-                                                    content_type: :json, accept: :json
-                                                  })
-      verify_and_parse(response_tags)
+      query("cities/#{id}/categories")
     end
 
-    def cities(id)
-      response_cities = RestClient::Request.execute(method: :get,
-                                                    url: "#{URL}/cities/#{id}",
-                                                    headers: {
-                                                      params: { api_key: @api_key.to_s, username: @username.to_s },
-                                                      content_type: :json, accept: :json
-                                                    })
-      verify_and_parse(response_cities)
+    def city(id)
+      query("cities/#{id}")
+    end
+
+    def cities
+      query('cities')
+    end
+
+    private
+
+    def query(path, param_city_id = nil)
+      response = RestClient::Request.execute(method: :get,
+                                             url: "#{URL}/#{path}",
+                                             headers: {
+                                               params: { api_key: @api_key.to_s,
+                                                         username: @username.to_s,
+                                                         city_id: param_city_id.to_s },
+                                               content_type: :json, accept: :json
+                                             })
+      verify_and_parse(response)
     end
 
     def verify_and_parse(response)
