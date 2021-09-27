@@ -11,3 +11,9 @@ desc 'Load data of activities from Sputnik8 API'
 task activities: :environment do
   ApiSputnik8::ActivitiesLoaderService.call
 end
+
+desc 'Loading tag data with 0 weights from the Sputnik8 API'
+
+task tags: :environment do
+  ApiSputnik8::TagsLoaderService.call
+end

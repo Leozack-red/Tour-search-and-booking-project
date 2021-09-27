@@ -16,12 +16,12 @@ module ApiSputnik8
       private
 
       def create_record(activity)
-        Activity.where(title: activity[:title],
-                       description: activity[:description],
-                       photo: activity.dig(:main_photo, :small),
-                       price: activity[:price],
-                       customers_review_rating: activity[:customers_review_rating].to_f)
-                .first_or_create(city_id: activity[:city_id])
+        Activity.where(title: activity['title'],
+                       description: activity['description'],
+                       photo: activity.dig('main_photo', 'small'),
+                       price: activity['price'],
+                       customers_review_rating: activity['customers_review_rating'].to_f)
+                .first_or_create(city_id: activity['city_id'])
       end
     end
   end

@@ -3,6 +3,6 @@
 FactoryBot.define do
   factory :tag do
     name { 'Музей' }
-    weight { 6 }
+    weight { 0 }
   end
 end

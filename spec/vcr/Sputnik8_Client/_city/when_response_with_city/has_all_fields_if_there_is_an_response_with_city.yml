@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Sep 2021 13:37:12 GMT
+      - Mon, 27 Sep 2021 09:03:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -44,23 +44,23 @@ http_interactions:
       Referrer-Policy:
       - no-referrer-when-downgrade
       Etag:
-      - W/"439f8393d866ab5c277c972c0025194d"
+      - W/"42abbfff0e619724fec11aa49dbf6aae"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _sptnik_server_session=YW1vS1lENHVmb2hkeU1SOVkzdzZMbmU0Z2ZLQXlNS1JQcnUxeVQ2eklWcTRYRkpHaTBFeHpQMEZjblZ5NmUrWXFlenhiUS9NTGpTTU9lWjMrUVVHZURxdUNJQjJnL2NrdE1hZm9wRzBlUmZLZWRhS3RmSGp3cFZsN0trM2lLQXhGQkRucWVYQ0twMC9qWGhTTHhlRHZBPT0tLWJDenFPcnUva0dJbFhjTjIyVGkzRGc9PQ%3D%3D--5d161b61af329a28bafa0b16f1c01aaf93df7daf;
+      - _sptnik_server_session=S1Fib1NrejNhai9pbjV5QVRCSjZ2YUxmcUVHcUVBdWg1MWhJU0hFeUcrNmI0MW1aL0NxNjJxcWkwOWZEUHZ6eHd2bytHeXZ4d3lxREhWTForVVBxaC9zQXh5eUxvTjRtK2tBS2xWZ0E3TXlnOHF3TkJuOFZBMEtXY2d0SEpZTEx3SHFwQWNNdXdzbDBxajlKbjRGV1VnPT0tLWwydWdMTzR5TDY3YzlsU2l3bUhyTGc9PQ%3D%3D--36025dd2e55b87611e154bd5bfbe4382f4a5fbf4;
         path=/; HttpOnly
-      - ahoy_visit=d159b2ca-6790-4884-9f07-ece762b53a39; domain=.sputnik8.com; path=/;
-        expires=Mon, 20 Sep 2021 17:37:12 GMT
-      - ahoy_visitor=53b4e593-6ca7-40b6-bcfa-6cfc78ed317f; domain=.sputnik8.com; path=/;
-        expires=Wed, 20 Sep 2023 13:37:12 GMT
+      - ahoy_visit=c36bbf73-a102-4290-901e-97923089756c; domain=.sputnik8.com; path=/;
+        expires=Mon, 27 Sep 2021 13:03:55 GMT
+      - ahoy_visitor=b67ca7e5-15b7-4d92-a7cd-a993cd3520bf; domain=.sputnik8.com; path=/;
+        expires=Wed, 27 Sep 2023 09:03:55 GMT
       X-Request-Id:
-      - 38145b91-0fd0-4530-a643-e9026be7d139
+      - 6f68de26-4e43-41ab-b9a2-9bafbc81ff7b
       X-Runtime:
-      - '0.081703'
+      - '0.052097'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJpZCI6MSwidXJsIjoiaHR0cHM6Ly93d3cuc3B1dG5pazguY29tL3J1L3N0LXBldGVyc2J1cmc/cmVmPTQyNDIiLCJzbHVnIjoic3QtcGV0ZXJzYnVyZyIsIm5hbWUiOiLQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIsIm5hbWVfaW5fY2FzZSI6ItCyINCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCz0LUiLCJwcm9kdWN0cyI6MjM0MSwicHJvdmlkZXJzIjoxMjk0LCJjb29yZGluYXRlcyI6eyJsYXQiOm51bGwsImxuZyI6bnVsbH0sImdlbyI6eyJjb3VudHJ5Ijp7ImlkIjoxLCJuYW1lIjoi0KDQvtGB0YHQuNGPIn0sInJlZ2lvbiI6eyJpZCI6MSwibmFtZSI6ItCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCzIn0sImRlc2NyaXB0aW9uIjp7ImltYWdlIjoiaHR0cHM6Ly83ZDllODhhOC1mMTc4LTQwOTgtYmVhNS00OGQ5NjA5MjA2MDUuc2VsY2RuLm5ldC9kNzhmNTI4Ni1lNzYzLTRhOTUtOWNlZS1iN2M0M2MzNmJlZGMvIiwibm90ZSI6bnVsbCwidGV4dCI6IuKtkCAle2NpdHlfYWN0aXZpdGllc19jb3VudF90ZXh0fSDQv9C+INCf0LXRgtC10YDQsdGD0YDQs9GDINC+0YIg0YfQsNGB0YLQvdGL0YUg0LPQuNC00L7QsiDQuCDQvtGE0LjRhtC40LDQu9GM0L3Ri9GFINGC0YPRgNC+0L/QtdGA0LDRgtC+0YDQvtCyOiDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3Ri9C1INC4INCz0YDRg9C/0L/QvtCy0YvQtSwg0LDQstGC0L7QsdGD0YHQvdGL0LUg0YLRg9GA0Ysg0Lgg0L/QtdGI0LXRhdC+0LTQvdGL0LUg0L/RgNC+0LPRg9C70LrQuC4g0KbQtdC90Ysg0L3QsCDRjdC60YHQutGD0YDRgdC40Lgg0LIg0KHQn9CxINC+0YIgJXtjaXR5X21pbl9jb3N0fSFcclxuIn19fQ==
-  recorded_at: Mon, 20 Sep 2021 13:37:12 GMT
+        eyJpZCI6MSwidXJsIjoiaHR0cHM6Ly93d3cuc3B1dG5pazguY29tL3J1L3N0LXBldGVyc2J1cmc/cmVmPTQyNDIiLCJzbHVnIjoic3QtcGV0ZXJzYnVyZyIsIm5hbWUiOiLQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIsIm5hbWVfaW5fY2FzZSI6ItCyINCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCz0LUiLCJwcm9kdWN0cyI6MjM0OSwicHJvdmlkZXJzIjoxMjk3LCJjb29yZGluYXRlcyI6eyJsYXQiOm51bGwsImxuZyI6bnVsbH0sImdlbyI6eyJjb3VudHJ5Ijp7ImlkIjoxLCJuYW1lIjoi0KDQvtGB0YHQuNGPIn0sInJlZ2lvbiI6eyJpZCI6MSwibmFtZSI6ItCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCzIn0sImRlc2NyaXB0aW9uIjp7ImltYWdlIjoiaHR0cHM6Ly83ZDllODhhOC1mMTc4LTQwOTgtYmVhNS00OGQ5NjA5MjA2MDUuc2VsY2RuLm5ldC9kNzhmNTI4Ni1lNzYzLTRhOTUtOWNlZS1iN2M0M2MzNmJlZGMvIiwibm90ZSI6bnVsbCwidGV4dCI6IuKtkCAle2NpdHlfYWN0aXZpdGllc19jb3VudF90ZXh0fSDQv9C+INCf0LXRgtC10YDQsdGD0YDQs9GDINC+0YIg0YfQsNGB0YLQvdGL0YUg0LPQuNC00L7QsiDQuCDQvtGE0LjRhtC40LDQu9GM0L3Ri9GFINGC0YPRgNC+0L/QtdGA0LDRgtC+0YDQvtCyOiDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3Ri9C1INC4INCz0YDRg9C/0L/QvtCy0YvQtSwg0LDQstGC0L7QsdGD0YHQvdGL0LUg0YLRg9GA0Ysg0Lgg0L/QtdGI0LXRhdC+0LTQvdGL0LUg0L/RgNC+0LPRg9C70LrQuC4g0KbQtdC90Ysg0L3QsCDRjdC60YHQutGD0YDRgdC40Lgg0LIg0KHQn9CxINC+0YIgJXtjaXR5X21pbl9jb3N0fSFcclxuIn19fQ==
+  recorded_at: Mon, 27 Sep 2021 09:03:55 GMT
 recorded_with: VCR 6.0.0
