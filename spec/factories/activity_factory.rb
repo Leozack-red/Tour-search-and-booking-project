@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :activity do
     association :city
-    title { 'Обзорная автобусная экскурсия по Москве' }
+    title { 'Обзорная экскурсия по Москве' }
     description { 'Sputnik8.com — это место' }
     photo { 'https://c7.ucarecdn.com/a7cad563' }
     price { '750.00 руб.' }

@@ -8,9 +8,9 @@ module ApiSputnik8
                                       Rails.application.credentials.username)
         set_of_cities(client, count_of_id).each do |id|
           data_of_city = client.city(id)
-          City.where(name: data_of_city['name'],
-                     weight: data_of_city['providers'],
-                     photo: data_of_city.dig('geo', 'description', 'image')).first_or_create(id: id)
+          City.where(id: id).first_or_create(name: data_of_city['name'],
+                                             weight: data_of_city['providers'],
+                                             photo: data_of_city.dig('geo', 'description', 'image'))
         end
       end
 

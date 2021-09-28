@@ -30,10 +30,9 @@ RSpec.describe ApiSputnik8::CitiesLoaderService do
   end
 
   context 'when client returns correct city with the already added city' do
-    let(:city) { create(:city) }
+    before { create(:city, id: 42) }
 
     it 'creates only correct city' do
-      city
       expect { call }.not_to change(City, :count).from(1)
     end
   end

@@ -11,9 +11,11 @@ RSpec.describe ApiSputnik8::ActivitiesLoaderService do
   let(:city) { create(:city) }
 
   before do
+    city
     allow(Sputnik8::Client).to receive(:new).and_return(fake_client)
-    allow(fake_client).to receive(:activities).and_return([{ 'city_id' => city.id,
-                                                             'title' => 'Обзорная автобусная экскурсия по Москве',
+    allow(fake_client).to receive(:activities).and_return([{ 'id' => 42,
+                                                             'city_id' => city.id,
+                                                             'title' => 'Экскурсия по Москве',
                                                              'description' => 'Sputnik8.com — это место',
                                                              'main_photo' =>
                                                              { 'small' => 'https://c7.ucarecdn.com/a7cad563' },
@@ -25,17 +27,16 @@ RSpec.describe ApiSputnik8::ActivitiesLoaderService do
     it 'adds new activity record with correct attributes', :aggregate_failures do
       call
       expect(Activity.count).to eq(1)
-      expect(Activity.first).to have_attributes(city_id: city.id, title: 'Обзорная автобусная экскурсия по Москве',
+      expect(Activity.first).to have_attributes(id: 42, city_id: city.id, title: 'Экскурсия по Москве',
                                                 description: 'Sputnik8.com — это место', photo: 'https://c7.ucarecdn.com/a7cad563',
                                                 price: '750.00 руб.', customers_review_rating: 6.6)
     end
   end
 
   context 'when client returns correct activities with the already added activity' do
-    let(:activity) { create(:activity) }
+    before { create(:activity, city: city, id: 42) }
 
     it 'creates only correct activity' do
-      activity
       expect { call }.not_to change(Activity, :count).from(1)
     end
   end
