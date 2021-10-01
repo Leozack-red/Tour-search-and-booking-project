@@ -12,7 +12,12 @@ RSpec.describe ApiSputnik8::TagsLoaderService do
 
   before do
     allow(Sputnik8::Client).to receive(:new).and_return(fake_client)
-    allow(fake_client).to receive(:tags).and_return([{ 'sub_categories' => [{ 'short_name' => 'Музей' }] }])
+    allow(fake_client).to receive(:tags).and_return([{ 'sub_categories' => [{ 'short_name' => 'Музей', 'products' => [
+                                                      {
+                                                        'id' => 2694
+                                                      }
+                                                    ] }] }])
+    allow(ApiSputnik8::TaggingsLoaderService).to receive(:call).and_return(nil)
     activity
   end
 
@@ -25,10 +30,9 @@ RSpec.describe ApiSputnik8::TagsLoaderService do
   end
 
   context 'when client returns correct activities with the already added activity' do
-    let(:tag) { create(:tag) }
+    before { create(:tag) }
 
     it 'creates only correct activity' do
-      tag
       expect { call }.not_to change(Tag, :count).from(1)
     end
   end
