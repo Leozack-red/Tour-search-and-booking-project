@@ -3,9 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe ApiSputnik8::ActivitiesLoaderService do
-  subject(:call) do
-    described_class.call
-  end
+  subject(:call) { described_class.call }
 
   let(:fake_client) { instance_double(Sputnik8::Client) }
   let(:city) { create(:city) }

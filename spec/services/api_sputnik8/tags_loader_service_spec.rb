@@ -3,9 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe ApiSputnik8::TagsLoaderService do
-  subject(:call) do
-    described_class.call
-  end
+  subject(:call) { described_class.call }
 
   let(:fake_client) { instance_double(Sputnik8::Client) }
   let(:activity) { create(:activity) }
@@ -17,7 +15,7 @@ RSpec.describe ApiSputnik8::TagsLoaderService do
                                                         'id' => 2694
                                                       }
                                                     ] }] }])
-    allow(ApiSputnik8::TaggingsLoaderService).to receive(:call).and_return(nil)
+    allow(ApiSputnik8::TaggingsCreatorService).to receive(:call).and_return(nil)
     activity
   end
 

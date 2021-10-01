@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module ApiSputnik8
-  class TaggingsLoaderService
+  class TaggingsCreatorService
     class << self
       def call(list_of_ids, id_of_tag)
         (list_of_ids & Activity.pluck(:id)).each do |activity_id|

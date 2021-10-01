@@ -24,7 +24,7 @@ module ApiSputnik8
 
       def create_taggings(hash_of_tag, create_record)
         list_of_ids = hash_of_tag['products'].pluck('id')
-        ApiSputnik8::TaggingsLoaderService.call(list_of_ids, create_record)
+        ApiSputnik8::TaggingsCreatorService.call(list_of_ids, create_record)
       end
     end
   end

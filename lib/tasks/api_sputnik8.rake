@@ -17,3 +17,9 @@ desc 'Loading tag data with 0 weights from the Sputnik8 API'
 task tags: :environment do
   ApiSputnik8::TagsLoaderService.call
 end
+
+desc 'Updating tags from 0 weights'
+
+task weights: :environment do
+  ApiSputnik8::TagWeightsUpdaterService.call
+end

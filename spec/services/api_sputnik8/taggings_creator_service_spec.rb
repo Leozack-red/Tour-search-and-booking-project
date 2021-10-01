@@ -2,10 +2,8 @@
 
 require 'rails_helper'
 
-RSpec.describe ApiSputnik8::TaggingsLoaderService do
-  subject(:call) do
-    described_class.call([10, 666], 5)
-  end
+RSpec.describe ApiSputnik8::TaggingsCreatorService do
+  subject(:call) { described_class.call([10, 666], 5) }
 
   let(:activity1) { create(:activity, id: 10) }
   let(:activity2) { create(:activity, id: 666) }
