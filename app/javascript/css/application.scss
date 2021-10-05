@@ -1,0 +1,15 @@
+
+// sass variable overrides
+$body-bg: aliceblue;
+$body-color: #111;
+
+// Graphical variables
+@import "graphical_variables/fonts";
+@import "graphical_variables/colors";
+@import "graphical_variables/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+
+@import 'bootstrap';
+@import "components/index"
