@@ -5,7 +5,7 @@ module ApiSputnik8
     class << self
       def call
         Tag.find_each do |tag|
-          Tag.update(tag.id, weight: Tagging.where(tag_id: tag.id).count)
+          tag.update(weight: tag.activities.count)
         end
       end
     end
