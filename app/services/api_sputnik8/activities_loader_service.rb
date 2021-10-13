@@ -19,7 +19,7 @@ module ApiSputnik8
         Activity.where(id: activity['id'])
                 .first_or_create(city_id: activity['city_id'], title: activity['title'],
                                  description: activity['description'],
-                                 photo: activity.dig('main_photo', 'small'),
+                                 photo: activity.dig('main_photo', 'big'),
                                  price: activity['price'],
                                  customers_review_rating: activity['customers_review_rating'].to_f)
       end

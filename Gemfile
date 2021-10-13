@@ -73,3 +73,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # For client
 gem 'rest-client'
+
+# for pagination
+gem 'will_paginate'
+gem 'will_paginate-bootstrap-style'

@@ -16,7 +16,7 @@ RSpec.describe ApiSputnik8::ActivitiesLoaderService do
                                                              'title' => 'Экскурсия по Москве',
                                                              'description' => 'Sputnik8.com — это место',
                                                              'main_photo' =>
-                                                             { 'small' => 'https://c7.ucarecdn.com/a7cad563' },
+                                                             { 'big' => 'https://c7.ucarecdn.com/a7cad563' },
                                                              'price' => '750.00 руб.',
                                                              'customers_review_rating' => '6.6' }])
   end

@@ -1,0 +1,16 @@
+<div class="card">
+  <%= tag.img(src: activity.photo, class: 'card-img-top', alt: activity.title) %>
+  <div class="card-body">
+    <h5 class ="card-title">
+      <%= activity.title %>
+    </h5>
+    <p class = 'card-text'>
+      <%= first_sentence(activity.description) %>
+    </p>
+  </div>
+  <div class="card-footer">
+    <b class = 'text-muted'>
+      <%= activity.price %>
+    </b>
+  </div>
+</div>

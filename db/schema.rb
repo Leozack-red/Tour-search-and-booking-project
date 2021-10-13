@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_27_114257) do
+ActiveRecord::Schema.define(version: 2021_10_06_153542) do
 
   create_table "activities", force: :cascade do |t|
     t.integer "city_id", null: false
     t.string "title", null: false
-    t.string "description", null: false
+    t.string "description"
     t.string "photo", null: false
     t.string "price", null: false
     t.float "customers_review_rating", null: false
