@@ -19,6 +19,6 @@ module Room
     # config.time_zone = "Central Time (US & Canada)"
     config.autoload_paths << Rails.root.join('lib')
 
-    config.factory_bot.definition_file_paths = ['spec/factories']
+    config.factory_bot.definition_file_paths = ['spec/factories'] if Rails.env.test?
   end
 end

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="pagination">
+    <%= render partial: "shared/pagination", locals: { scope: @presenter.pagination } %>
+  </div>
+    <div class="row row-cols-2 row-cols-md-4 g-4 col-lg-12 my-4">
+      <%= render partial: "shared/activity", collection: @presenter.pagination, as: :activity%>
+    </div>
+  <div>
+    <%= render partial: "shared/pagination", locals: { scope: @presenter.pagination } %>
+  </div>
+</div>
