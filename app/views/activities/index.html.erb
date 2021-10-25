@@ -1,5 +1,11 @@
-<% provide(:title, "Activities") %>
-<h1>Sample App</h1>
-<p>
-  This is the page for Activities.
-</p>
+<div class="container">
+  <div class="pagination">
+    <%= render partial: 'shared/pagination', locals: { scope: @main_page.pagination }%>
+  </div>
+  <div class="row row-cols-2 row-cols-md-4 gx-5 col-lg-12 my-4">
+    <%= render partial: "shared/activity", collection: @main_page.pagination, as: :activity %>
+  </div>
+  <div>
+      <%= render partial: "shared/pagination", locals: { scope: @main_page.pagination } %>
+  </div>
+</div>

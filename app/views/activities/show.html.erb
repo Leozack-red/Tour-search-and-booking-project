@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row col-lg-12 my-4">
+    <div class="card h-100">
+      <%= tag.img(src: @view_activity.activity.photo, class: 'card-img-top', alt: @view_activity.activity.title) %>
+      <div class="card-body">
+        <h5 class="card-title"><%= @view_activity.activity.title %></h5>
+        <p class="card-text"><%= @view_activity.activity.description %></p>
+      </div>
+      <div class="card-footer">
+        <b class="text-muted"><%= @view_activity.activity.price %></b>
+      </div>
+    </div>
+  </div>
+</div>
